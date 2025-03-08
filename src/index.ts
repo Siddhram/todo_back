@@ -9,7 +9,7 @@ dotenv.config()
 app.use(cors())
 app.use(Express.json())
 
-mongoose.connect(process.env.MONGOURL).then(()=>{
+mongoose.connect(process.env.MONGOURL!).then(()=>{
     console.log('mongodb connected');
     
 }).catch(()=>{
